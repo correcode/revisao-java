@@ -1,9 +1,9 @@
-public class Hello{
+public class Hello {
     public static void main(String[] args) {
 
-        int[] numeros = {1,2,3,4,5,6,7,8,9,10};
+        int[] numeros = { 1, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        System.out.println("Numero primo:  ");
+        System.out.println("Numeros primos : ");
         for(int numero : numeros){
             if(ehPrimo(numero)){
                 System.out.println(numero + " ");
@@ -11,7 +11,7 @@ public class Hello{
         }
 
     }
-    public static boolean ehPrimo(int n){
+    public static boolean ehPrimo(int n) {
         if(n <= 1) return false;
 
         for(int i = 2; i <= Math.sqrt(n); i++){
@@ -20,7 +20,3 @@ public class Hello{
         return true;
     }
 }
-
-
-
-
